@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var joinButton: UIButton!
@@ -26,5 +25,6 @@ class ViewController: UIViewController {
         joinButton.layer.backgroundColor = .init(red: 0, green: 112/255, blue: 74/255, alpha: 1)
         joinButton.layer.cornerRadius = joinButton.bounds.height / 2
     }
+    
 }
 

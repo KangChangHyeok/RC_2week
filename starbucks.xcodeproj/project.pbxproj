@@ -13,6 +13,13 @@
 		270985A428390C0E00A15683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270985A228390C0E00A15683 /* Main.storyboard */; };
 		270985A628390C1000A15683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270985A528390C1000A15683 /* Assets.xcassets */; };
 		270985A928390C1000A15683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270985A728390C1000A15683 /* LaunchScreen.storyboard */; };
+		270985B1283BBC0700A15683 /* PayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985B0283BBC0700A15683 /* PayController.swift */; };
+		270985B3283BBC3C00A15683 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985B2283BBC3C00A15683 /* OrderController.swift */; };
+		270985B5283BBC7000A15683 /* GiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985B4283BBC7000A15683 /* GiftController.swift */; };
+		270985B7283BBC8600A15683 /* OtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985B6283BBC8600A15683 /* OtherController.swift */; };
+		270985BB283BC24500A15683 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985BA283BC24500A15683 /* TabBarController.swift */; };
+		270985BD283BD9DD00A15683 /* OrderNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985BC283BD9DD00A15683 /* OrderNavigationController.swift */; };
+		270985BF283CBC1300A15683 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270985BE283CBC1300A15683 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		270985A528390C1000A15683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270985A828390C1000A15683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270985AA28390C1000A15683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270985B0283BBC0700A15683 /* PayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayController.swift; sourceTree = "<group>"; };
+		270985B2283BBC3C00A15683 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		270985B4283BBC7000A15683 /* GiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftController.swift; sourceTree = "<group>"; };
+		270985B6283BBC8600A15683 /* OtherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherController.swift; sourceTree = "<group>"; };
+		270985BA283BC24500A15683 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = starbucks/Controller/TabBarController.swift; sourceTree = SOURCE_ROOT; };
+		270985BC283BD9DD00A15683 /* OrderNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNavigationController.swift; sourceTree = "<group>"; };
+		270985BE283CBC1300A15683 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = starbucks/Controller/TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				2709859C28390C0E00A15683 /* AppDelegate.swift */,
 				2709859E28390C0E00A15683 /* SceneDelegate.swift */,
-				270985A028390C0E00A15683 /* ViewController.swift */,
-				270985A228390C0E00A15683 /* Main.storyboard */,
-				270985A528390C1000A15683 /* Assets.xcassets */,
-				270985A728390C1000A15683 /* LaunchScreen.storyboard */,
 				270985AA28390C1000A15683 /* Info.plist */,
+				270985A528390C1000A15683 /* Assets.xcassets */,
+				270985B9283BBE4F00A15683 /* View */,
+				270985B8283BBC8D00A15683 /* Controller */,
 			);
 			path = starbucks;
+			sourceTree = "<group>";
+		};
+		270985B8283BBC8D00A15683 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				270985A028390C0E00A15683 /* ViewController.swift */,
+				270985B0283BBC0700A15683 /* PayController.swift */,
+				270985B2283BBC3C00A15683 /* OrderController.swift */,
+				270985B4283BBC7000A15683 /* GiftController.swift */,
+				270985B6283BBC8600A15683 /* OtherController.swift */,
+				270985BA283BC24500A15683 /* TabBarController.swift */,
+				270985BC283BD9DD00A15683 /* OrderNavigationController.swift */,
+				270985BE283CBC1300A15683 /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		270985B9283BBE4F00A15683 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				270985A228390C0E00A15683 /* Main.storyboard */,
+				270985A728390C1000A15683 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270985B7283BBC8600A15683 /* OtherController.swift in Sources */,
+				270985BB283BC24500A15683 /* TabBarController.swift in Sources */,
+				270985B1283BBC0700A15683 /* PayController.swift in Sources */,
+				270985B3283BBC3C00A15683 /* OrderController.swift in Sources */,
+				270985BD283BD9DD00A15683 /* OrderNavigationController.swift in Sources */,
+				270985BF283CBC1300A15683 /* TableViewCell.swift in Sources */,
 				270985A128390C0E00A15683 /* ViewController.swift in Sources */,
 				2709859D28390C0E00A15683 /* AppDelegate.swift in Sources */,
 				2709859F28390C0E00A15683 /* SceneDelegate.swift in Sources */,
+				270985B5283BBC7000A15683 /* GiftController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
