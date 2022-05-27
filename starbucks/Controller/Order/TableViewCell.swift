@@ -8,9 +8,11 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var tableViewCellImageV: UIImageView!
     @IBOutlet weak var tableViewCellLabel: UILabel!
+    @IBOutlet weak var tableViewCellELabel: UILabel!
+    @IBOutlet weak var tableViewPriceLabel: UILabel!
     @IBOutlet weak var emptyV: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
